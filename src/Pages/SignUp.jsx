@@ -38,7 +38,7 @@ const SignUp = () => {
         });
 
         // save user profile in the mongodb database
-        fetch("http://localhost:3000/users", {
+        fetch("https://espresso-emporium-server-one-omega.vercel.app/users", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

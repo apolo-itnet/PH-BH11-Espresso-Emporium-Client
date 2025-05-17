@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div>
       <div className="text-center py-6" >
-        <p>--- Sip & Savor ---</p>
+        <p> --- Sip & Savor --- </p>
         <h1 className="text-4xl font-bold py-3">Our Popular Products</h1>
         <Link to="/addCoffee" className="btn border border-gray-800 bg-orange-300 rounded-lg">
           Add Coffee <PiCoffeeFill size={18} />

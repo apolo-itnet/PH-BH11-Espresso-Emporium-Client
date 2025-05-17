@@ -13,7 +13,7 @@ const AddCoffee = () => {
     console.log(newCoffee);
 
     // send add coffee dat tho database
-    fetch("http://localhost:3000/coffees", {
+    fetch("https://espresso-emporium-server-one-omega.vercel.app/coffees", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

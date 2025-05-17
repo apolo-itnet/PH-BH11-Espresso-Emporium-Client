@@ -25,7 +25,7 @@ const AllUsers = () => {
     }).then((result) => {
       // console.log(result.isConfirmed);
       if (result.isConfirmed) {
-        fetch(`http://localhost:3000/users/${_id}`, {
+        fetch(`https://espresso-emporium-server-one-omega.vercel.app/users/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
