@@ -28,7 +28,7 @@ const router = createBrowserRouter([
         Component: AddCoffee,
       },
       {
-        path: "/coffee/:id",
+        path: "/coffees/:id",
         loader: ({ params }) =>
           fetch(`https://espresso-emporium-server-one-omega.vercel.app/coffees/${params.id}`),
         Component: CoffeeDetails,

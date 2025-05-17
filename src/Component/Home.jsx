@@ -7,7 +7,7 @@ const Home = () => {
   const loadCoffees = useLoaderData();
   const [coffees, setCoffees] = useState(loadCoffees);
 
-  console.log(coffees);
+  // console.log(coffees);
 
   return (
     <div>
@@ -27,6 +27,7 @@ const Home = () => {
             coffee={coffee}
           ></CoffeeCard>
         ))}
+        
       </div>
     </div>
   );

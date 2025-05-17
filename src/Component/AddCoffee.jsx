@@ -10,7 +10,7 @@ const AddCoffee = () => {
     const formData = new FormData(form);
     const newCoffee = Object.fromEntries(formData.entries());
 
-    console.log(newCoffee);
+    // console.log(newCoffee);
 
     // send add coffee dat tho database
     fetch("https://espresso-emporium-server-one-omega.vercel.app/coffees", {

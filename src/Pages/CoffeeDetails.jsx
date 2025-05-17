@@ -4,7 +4,7 @@ import { IoReturnUpBackOutline } from "react-icons/io5";
 
 const CoffeeDetails = ({ params }) => {
   const coffeeInfo = useLoaderData();
-  console.log(coffeeInfo);
+  // console.log(coffeeInfo);
 
   const { _id, name, category, supplier, photo, taste, details, chef } =
     coffeeInfo;
