@@ -1,14 +1,23 @@
 import React from "react";
 import { Outlet } from "react-router";
-import Header from "../Component/Header";
+import Navbar from "../Component/Navbar";
+import MenuLeft from "../Component/MenuLeft";
 
 const MainLayout = () => {
   return (
     <div>
-      <Header></Header>
-      <div className="max-w-7xl mx-auto">
-        <Outlet></Outlet>
-      </div>
+      <nav className="ml-56 sticky top-0 z-50 w-[calc(100vw - 224px)]">
+        {/* <Navbar /> */}
+      </nav>
+
+      <main className="grid grid-cols-12 gap-2">
+        <aside className="col-span-12 md:col-span-2">
+          <MenuLeft></MenuLeft>
+        </aside>
+        <section className="col-span-12 md:col-span-10">
+          <Outlet></Outlet>
+        </section>
+      </main>
     </div>
   );
 };

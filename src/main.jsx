@@ -12,6 +12,7 @@ import SignIn from "./Pages/SignIn.jsx";
 import SignUp from "./Pages/SignUp.jsx";
 import AuthProvider from "./Context/AuthProvider.jsx";
 import AllUsers from "./Pages/AllUsers.jsx";
+import CoffeeSection from "./Component/CoffeeSection.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,11 @@ const router = createBrowserRouter([
         index: true,
         loader: () => fetch("https://espresso-emporium-server-one-omega.vercel.app/coffees"),
         Component: Home,
+      },
+      {
+        path: "/coffeeSection",
+        loader: () => fetch("https://espresso-emporium-server-one-omega.vercel.app/coffees"),
+        Component: CoffeeSection,
       },
       {
         path: "/addCoffee",

@@ -1,2 +1,20 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+
+/* src/App.css or any CSS file */
+.font-cabin {
+  font-family: 'Cabin Condensed', sans-serif;
+}
+
+.font-calistoga {
+  font-family: 'Calistoga', serif;
+}
+
+.bg-primary {
+  background-color: #1D4E1A;
+}
+
+.text-color-primary {
+  color: #1D4E1A;
+}

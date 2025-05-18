@@ -69,7 +69,7 @@ const CoffeeCard = ({ coffee, coffees, setCoffees }) => {
           </div>
           <div className="flex flex-col gap-3 items-center justify-center ">
             <Link
-              to={`/coffee/${_id}`}
+              to={`/coffees/${_id}`}
               className="text-white bg-orange-300 rounded-sm px-3 btn shadow-none border-none"
             >
               <IoEyeSharp size={16} />

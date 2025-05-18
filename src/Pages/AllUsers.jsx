@@ -58,7 +58,7 @@ const AllUsers = () => {
 
   return (
     <div>
-      <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <div className="py-6 px-10 h-screen mx-auto">
         {/* Card */}
         <div className="flex flex-col">
           <div className="-m-1.5 overflow-x-auto">
@@ -149,7 +149,7 @@ const AllUsers = () => {
                         </div>
                       </th>
 
-                      <th scope="col" className="px-6 py-3 text-start">
+                      {/* <th scope="col" className="px-6 py-3 text-start">
                         <div className="flex items-center gap-x-2">
                           <span className="text-xs font-semibold uppercase text-gray-800">
                             Register Date
@@ -163,7 +163,7 @@ const AllUsers = () => {
                             Last Sign in
                           </span>
                         </div>
-                      </th>
+                      </th> */}
 
                       <th scope="col" className="px-6 py-3 text-end"></th>
                     </tr>
@@ -212,20 +212,20 @@ const AllUsers = () => {
                             </span>
                           </div>
                         </td>
-                        <td className="size-px whitespace-nowrap">
+                        {/* <td className="size-px whitespace-nowrap">
                           <div className="px-6 py-3">
                             <span className="block text-sm font-semibold text-gray-800">
                               {user.creationTime}
                             </span>
                           </div>
-                        </td>
-                        <td className="size-px whitespace-nowrap">
+                        </td> */}
+                        {/* <td className="size-px whitespace-nowrap">
                           <div className="px-6 py-3">
                             <span className="block text-sm font-semibold text-gray-800">
-                              {/* {user.lastSignInTime} */}
+                              {user.lastSignInTime}
                             </span>
                           </div>
-                        </td>
+                        </td> */}
                         <td className="size-px whitespace-nowrap pr-3">
                           <div className="flex gap-3 items-center justify-center ">
                             <Link
